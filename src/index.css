@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+:root {
+    --bg0: #070A12;
+    --bg1: #0B1122;
+    --surface0: rgba(255, 255, 255, .06);
+    --surface1: rgba(255, 255, 255, .09);
+    --surface2: rgba(255, 255, 255, .12);
+    --line: rgba(255, 255, 255, .14);
+    --line2: rgba(255, 255, 255, .22);
+
+    --text0: rgba(255, 255, 255, .92);
+    --text1: rgba(255, 255, 255, .72);
+    --text2: rgba(255, 255, 255, .55);
+
+    --accent: #8B5CF6;
+    --accent2: #22D3EE;
+    --good: #34D399;
+    --warn: #FBBF24;
+    --bad: #FB7185;
+
+    --shadow: 0 18px 60px rgba(0, 0, 0, .45);
+    --shadow2: 0 12px 30px rgba(0, 0, 0, .35);
+
+    --radius-lg: 22px;
+    --radius-md: 16px;
+    --radius-sm: 12px;
+
+    --maxw: 1150px;
+}
+
+[data-theme="obsidian"] {
+    --accent: #8B5CF6;
+    --accent2: #22D3EE;
+}
+
+[data-theme="guild-green"] {
+    --accent: #2EE59D;
+    --accent2: #A3FF5A;
+}
+
+[data-theme="chat-blue"] {
+    --accent: #3BA6FF;
+    --accent2: #76E4FF;
+}
+
+[data-theme="sunset"] {
+    --accent: #FB7185;
+    --accent2: #FBBF24;
+}
+
+body {
+    background:
+        radial-gradient(1200px 800px at 10% -10%, color-mix(in oklab, var(--accent) 35%, transparent), transparent 60%),
+        radial-gradient(900px 600px at 100% 0%, color-mix(in oklab, var(--accent2) 28%, transparent), transparent 55%),
+        radial-gradient(1000px 700px at 50% 110%, color-mix(in oklab, var(--accent) 14%, transparent), transparent 60%),
+        linear-gradient(180deg, var(--bg0), var(--bg1));
+    background-attachment: fixed;
+    color: var(--text0);
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.noise {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: .07;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+    z-index: 50;
+}
