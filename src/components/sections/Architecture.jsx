@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../ui/Button';
 import Card from '../ui/Card';
-import { Copy, Globe, Server } from 'lucide-react';
+import { Copy, Globe, Server, User } from 'lucide-react';
 
 const Architecture = () => {
     const copyToClipboard = (id, btnId) => {
@@ -106,17 +106,24 @@ const Architecture = () => {
 
                         {/* Client */}
                         <g>
-                            <rect x="382" y="170" width="216" height="160" rx="16"
+                            {/* Client Window UI */}
+                            <rect x="382" y="170" width="216" height="160" rx="8"
                                 fill="#111" stroke="#22d3ee" strokeWidth="2"></rect>
-                            <circle cx="490" cy="210" r="22" fill="#22d3ee" fillOpacity=".1"
-                                stroke="#22d3ee" strokeWidth="1"></circle>
-                            <path d="M 475 235 q 15 -12 30 0" fill="none" stroke="#22d3ee" strokeWidth="2"></path>
+                            {/* Title Bar */}
+                            <line x1="382" y1="200" x2="598" y2="200" stroke="#22d3ee" strokeWidth="1" strokeOpacity="0.3" />
+                            {/* Window Controls */}
+                            <circle cx="400" cy="185" r="3" fill="#22d3ee" />
+                            <circle cx="412" cy="185" r="3" fill="#22d3ee" fillOpacity="0.5" />
+                            <circle cx="424" cy="185" r="3" fill="#22d3ee" fillOpacity="0.5" />
+
+                            {/* User Icon */}
+                            <User x={466} y={205} width={48} height={48} color="#22d3ee" strokeWidth={1.5} />
                         </g>
                         <g fill="#fff" fontSize="16" fontFamily="sans-serif" fontWeight="bold">
-                            <text x="410" y="270">Thin Client</text>
+                            <text x="410" y="275">Thin Client</text>
                         </g>
                         <g fill="#22d3ee" fontSize="11" fontFamily="monospace">
-                            <text x="410" y="292">verify + cache</text>
+                            <text x="410" y="295">verify + cache</text>
                             <text x="410" y="310">sync guilds</text>
                         </g>
 

@@ -51,10 +51,8 @@ const LandingPage = () => {
       <nav className={`fixed w-full z-50 transition-all duration-300 border-b ${scrolled ? 'bg-[#050505]/80 backdrop-blur-md border-white/5 py-4' : 'bg-transparent border-transparent py-6'}`}>
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-lg flex items-center justify-center">
-              <span className="font-bold text-black text-lg">C</span>
-            </div>
-            <span className="font-bold tracking-tight text-white text-lg">CGP <span className="text-gray-500 font-normal">Protocol</span></span>
+            <img src="/logo.svg" alt="CGP Logo" className="w-8 h-8" />
+            <span className="font-bold tracking-tight text-white text-lg">Commons Guild <span className="text-gray-500 font-normal">Protocol</span></span>
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
             <a href="#architecture" className="hover:text-cyan-400 transition-colors">Architecture</a>
@@ -82,10 +80,10 @@ const LandingPage = () => {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white via-gray-200 to-gray-500 mb-6 tracking-tight leading-tight">
-            The Ledger <span className="italic font-serif text-cyan-400">Is</span> The Community.
+            Sovereign Communities. <span className="italic font-serif text-cyan-400">Unstoppable</span> Chat.
           </h1>
 
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
             A tokenless, forkable chat protocol inspired by Bitcoin’s data integrity
             but built for structured communities. No global state. No blockchain fees.
           </p>
@@ -109,8 +107,8 @@ const LandingPage = () => {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl font-bold text-white mb-4">One Protocol. <br /><span className="text-cyan-400">Infinite Interfaces.</span></h2>
-              <p className="text-gray-400 mb-6 leading-relaxed">
-                CGP is the substrate. It separates <strong>State</strong> (the signed logs) from <strong>View</strong> (the client).
+              <p className="text-gray-300 mb-6 leading-relaxed">
+                CGP is the foundation. It separates <strong>State</strong> (the signed logs) from <strong>View</strong> (the client).
               </p>
               <ul className="space-y-6">
                 <li className="flex items-center gap-4">
@@ -178,7 +176,7 @@ const LandingPage = () => {
       <section id="architecture" className="py-24 max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-white mb-4">Double-Relay Architecture</h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-300 max-w-2xl mx-auto">
             We solve the discovery vs. sovereignty paradox by separating the phonebook from the conversation.
           </p>
         </div>
@@ -315,9 +313,9 @@ const LandingPage = () => {
             <p className="text-gray-400 mb-8 leading-relaxed">
               You don't need to change the protocol. You just write a Relay Plugin that rejects events not meeting your criteria.
             </p>
-            <a href="#" className="text-cyan-400 hover:text-cyan-300 flex items-center gap-2 font-medium">
+            <Link to="/spec#plugins" className="text-cyan-400 hover:text-cyan-300 flex items-center gap-2 font-medium">
               Explore the Plugin API <ArrowRight className="w-4 h-4" />
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -326,15 +324,13 @@ const LandingPage = () => {
       <footer className="py-12 border-t border-white/5 bg-[#020202]">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 bg-gradient-to-br from-cyan-400 to-blue-600 rounded flex items-center justify-center">
-              <span className="font-bold text-black text-xs">C</span>
-            </div>
+            <img src="/logo.svg" alt="CGP Logo" className="w-6 h-6" />
             <span className="font-bold text-gray-500 text-sm">Commons Guild Protocol</span>
           </div>
 
           <div className="flex gap-6 text-sm text-gray-500">
             <Link to="/spec" className="hover:text-white transition-colors">Spec</Link>
-            <a href="#" className="hover:text-white transition-colors">Github</a>
+            <a href="https://github.com/ryanhlewis/commons-guild-protocol" className="hover:text-white transition-colors">Github</a>
             <a href="#" className="hover:text-white transition-colors">Twitter</a>
           </div>
 

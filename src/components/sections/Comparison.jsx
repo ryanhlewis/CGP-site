@@ -4,6 +4,11 @@ import { ChevronDown } from 'lucide-react';
 const Comparison = () => {
     const items = [
         {
+            title: "CGP (Commons Guild Protocol)",
+            sub: "P2P Relay + Optional Storage",
+            desc: "The best of both worlds. Like Nostr, it uses relays for always-online availability. Like Scuttlebutt, it supports full offline sync. Unlike Federation, you own your community data completely—no admin can deplatform you. Your community is finally an asset you own, not a service you rent."
+        },
+        {
             title: "Federated Protocols (e.g. Matrix)",
             sub: "Complex Federation",
             desc: "Federated protocols excel at cross-server connectivity but often incur high complexity. CGP chooses a simpler model: sequenced, append-only guild logs served by relays. This makes forks a first-class governance primitive instead of a social process."

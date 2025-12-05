@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22d3ee;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Outer C Shape (Open Hexagon) -->
+  <path d="M80 20 L35 20 L15 50 L35 80 L80 80" 
+        stroke="url(#grad1)" 
+        stroke-width="14" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" />
+
+  <!-- Inner Core (Floating Diamond) -->
+  <rect x="42" y="42" width="16" height="16" transform="rotate(45 50 50)" fill="#ffffff" filter="url(#glow)" />
+        
+  <!-- Tech Accents (Endpoints) -->
+  <circle cx="80" cy="20" r="4" fill="#ffffff" />
+  <circle cx="80" cy="80" r="4" fill="#ffffff" />
+</svg>

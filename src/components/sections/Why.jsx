@@ -49,8 +49,7 @@ const Why = () => {
                 <div className="mb-16 max-w-3xl">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Why CGP?</h2>
                     <p className="text-xl text-gray-400 leading-relaxed">
-                        The protocol is intentionally broad: it standardizes <strong>verifiable data</strong> and a simple
-                        <strong>web-native transport</strong>, while leaving room for relays and communities to choose their own operating norms.
+                        The protocol is intentionally broad: it standardizes <strong>verifiable data</strong> and a simple <strong>web-native transport</strong>, while leaving room for relays and communities to choose their own operating norms.
                     </p>
                 </div>
 

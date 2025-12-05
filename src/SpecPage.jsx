@@ -34,9 +34,7 @@ const SpecPage = () => {
                 <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
                     <div className="flex items-center gap-2">
                         <Link to="/" className="flex items-center gap-2 group">
-                            <div className="w-8 h-8 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform">
-                                <span className="font-bold text-black text-lg">C</span>
-                            </div>
+                            <img src="/logo.svg" alt="CGP Logo" className="w-8 h-8 group-hover:scale-105 transition-transform" />
                             <span className="font-bold tracking-tight text-white text-lg">CGP <span className="text-gray-500 font-normal">Spec</span></span>
                         </Link>
                     </div>
@@ -55,7 +53,7 @@ const SpecPage = () => {
                                 <ArrowLeft className="w-4 h-4 mr-2" /> Back
                             </Button>
                         </Link>
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/ryanhlewis/commons-guild-protocol" target="_blank" rel="noopener noreferrer">
                             <Button variant="default" className="text-sm">
                                 GitHub
                             </Button>

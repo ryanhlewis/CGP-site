@@ -17,8 +17,8 @@ const Hero = () => {
                     </div>
 
                     <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 tracking-tight leading-[1.1]">
-                        Sovereign communities, <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">cryptographically secured.</span>
+                        The Blueprint for <br />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Digital Sovereignty.</span>
                     </h1>
 
                     <p className="text-xl text-gray-400 mb-8 max-w-[54ch] leading-relaxed">
