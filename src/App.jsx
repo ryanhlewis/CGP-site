@@ -177,7 +177,7 @@ const LandingPage = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-white mb-4">Double-Relay Architecture</h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            We solve the discovery vs. sovereignty paradox by separating the phonebook from the conversation.
+            We solve the discovery vs. sovereignty paradox by decoupling global discovery from sovereign community hosting.
           </p>
         </div>
 
